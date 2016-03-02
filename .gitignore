@@ -1,0 +1,8 @@
+.DS_*
+node_modules
+.idea/
+.git
+/.cache
+/build
+dist
+*.marko.js

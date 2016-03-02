@@ -1,0 +1,8 @@
+<div class="form-group floating-label-form-group ${data.className}" w-bind>
+    <label class="control-label" w-for="floatInput">$!{data.label}</label>
+    <input type="${data.type}" w-id="floatInput" name="${data.name}" class="form-control" value="${data.text}" placeholder="$!{data.label}"
+        w-onFocus="handleInputFocus"
+        w-onBlur="handleInputBlur"
+        w-onChange="handleInputChange"
+        w-onKeyUp="handleInputKeyUp">
+</div>

@@ -1,0 +1,6 @@
+{
+    "dependencies": [
+        "./style.scss",
+        "require: validate.js"
+    ]
+}

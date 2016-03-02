@@ -1,0 +1,34 @@
+<lasso-page package-path="./browser.json"/>
+
+<layout-use("src/layouts/default/template.marko")>
+    <layout-put into="body">
+        <div class="aligner">
+            <div class="aligner-item">
+                <form id="login" class="card-form" role="form">
+                    <div class="step-wrapper">
+                        <div class="reg-header">
+                            <h4>Log In</h4>
+                        </div>
+                        <div class="reg-body">
+                            <app-floating-label label="Email" type="email" />
+                            <app-floating-label label="Full name" type="password" />
+                            <div class="form-group form-group-switch">
+                                <span class="label-switch-text">Keep me signed in</span>
+                                <label class="label-switch pull-right">
+                                    <input type="checkbox" autocomplete="off" name="" id="" value="true">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-footer text-center">
+                        <button type="submit" class="btn btn-lg btn-primary" id="">Log In</button>
+                        <h5><a href="/register"><strong>Register Now</strong></a></h5>
+                        <h5>Forgot your <a href="/forgot" id="password-forgot"><strong id="password-forgot">Password or Username</strong></a>?</h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </layout-put>
+
+</layout-use>

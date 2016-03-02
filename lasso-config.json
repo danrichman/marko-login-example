@@ -1,0 +1,30 @@
+{
+    "plugins": [
+        "lasso-marko",
+        "lasso-resolve-css-urls",
+        "lasso-sass",
+        {
+            "plugin": "lasso-autoprefixer",
+            "config": {
+                "browsers": [
+                    "last 2 versions",
+                    "> 1%"
+                ]
+            }
+        },
+        "lasso-minify-css"
+    ],
+
+    "outputDir": "public/dist",
+
+    "urlPrefix": "/dist",
+
+    "bundlingEnabled": false,
+
+    "minify": false,
+
+    "fingerprintsEnabled": false,
+
+    "resolveCssUrls": false
+
+}

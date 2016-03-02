@@ -1,0 +1,16 @@
+<lasso-page package-path="./browser.json"/>
+
+<layout-use("src/layouts/default/template.marko")>
+    <layout-put into="body">
+        <div class="aligner">
+            <div class="aligner-item">
+                <div id="register" class="card-form">
+
+                    <!-- Using a widget here for first of two-step registration -->
+                    <register-step />
+
+                </div><!-- /.card-form -->
+            </div><!-- /.aligner-item -->
+        </div><!-- /.aligner -->
+    </layout-put>
+</layout-use>

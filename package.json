@@ -1,0 +1,39 @@
+{
+  "name": "Base",
+  "version": "1.0.0",
+  "description": "Marko Widgets Registration Form Example.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "base",
+    "project",
+    "node",
+    "express",
+    "structure"
+  ],
+  "author": "Terlici Ltd.",
+  "license": "MIT",
+  "dependencies": {
+    "app-module-path": "^1.0.5",
+    "body-parser": "^1.12.3",
+    "browser-refresh-taglib": "^1.0.4",
+    "express": "^4.13.3",
+    "lasso": "^2.0.0",
+    "lasso-autoprefixer": "^1.0.3",
+    "lasso-imagemin": "^1.0.7",
+    "lasso-marko": "^2.0.7",
+    "lasso-sass": "^1.1.9",
+    "marko": "^3.0.0-alpha.2",
+    "marko-widgets": "^6.0.0-alpha.1",
+    "node-sass": "^3.4.2",
+    "request": "^2.69.0",
+    "validate.js": "^0.9.0"
+  },
+  "devDependencies": {
+    "browser-refresh": "^1.4.10",
+    "mocha": "^2.2.4",
+    "should": "^6.0.3"
+  }
+}
