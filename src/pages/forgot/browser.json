@@ -2,6 +2,7 @@
     "dependencies": [
         "./style.css",
         "require: marko-widgets",
+        "require: src/components/app-floating-label",
         "src/layouts/default/browser.json"
     ]
 }
