@@ -1,6 +1,19 @@
 # marko-login-example
 Marko.js, Lasso and Marko Widgets registration and login form example
 
+### Install
+
+```
+$ npm install
+```
+
+### Usage
+
+```
+$ node app.js
+```
+
+
 ![Login](https://raw.githubusercontent.com/danrichman/marko-login-example/master/img/login.png)
 
 #### This is a work in progress (Help Wanted)
