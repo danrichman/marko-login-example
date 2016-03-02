@@ -1,5 +1,5 @@
 # marko-login-example
-Marko.js, Lasso and Marko Widgets registration and login form example
+Marko.js (v3), Lasso and Marko Widgets registration and login form example
 
 ### Install
 
