@@ -1,27 +1,14 @@
 <lasso-page package-path="./browser.json"/>
 
-<layout-use("src/layouts/default/template.marko")>
+<layout-use("src/layouts/auth/template.marko")>
     <layout-put into="body">
         <div class="aligner">
             <div class="aligner-item">
-                <form id="forgot-password" class="card-form" role="form" id="password-reset-form">
-                    <div class="step-wrapper">
-                        <div class="reg-header">
-                            <h4>Forgot Password?</h4>
-                            <h5>Enter your email or username</h5>
-                        </div>
-                        <div class="reg-body">
-                            <app-floating-label label="Email" type="email" />
-                            <app-floating-label label="Username" />
-                        </div>
-                    </div>
-                    <div class="reg-footer text-center">
-                        <button type="button" class="btn btn-lg btn-primary" id="password-reset">Reset Password</button>
-                        <h5><a href="/login"><strong>Login</strong></a> or <a href="/register"><strong>Register</strong></a></h5>
-                    </div>
-                </form>
-            </div>
-        </div>
+                <div id="password-reset-form" class="card-form">
+                    <forgot-password-form />
+                </div><!-- /.card-form -->
+            </div><!-- /.aligner-item -->
+        </div><!-- /.aligner -->
     </layout-put>
 
 </layout-use>

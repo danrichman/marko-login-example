@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        "./style.less",
+        //"require: validate.js",
+        "require: src/components/app-floating-label",
+        "require: src/components/app-button",
+        "require: src/components/app-switch"
+    ]
+}

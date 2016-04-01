@@ -1,8 +1,17 @@
+<!-- When animating use: w-preserve-attrs="style,class" https://github.com/marko-js/marko-widgets/issues/121 -->
+<!-- name="${data.name}" -->
+
 <div class="form-group floating-label-form-group ${data.className}" w-bind>
-    <label class="control-label" w-for="floatInput">$!{data.label}</label>
-    <input type="${data.type}" w-id="floatInput" name="${data.name}" class="form-control" value="${data.text}" placeholder="$!{data.label}"
+    <label class="control-label" w-for="floatInput" w-id="floatInputLabel">${data.label}</label>
+    <input type="${data.type}" w-id="floatInput" class="form-control" name="${data.name}" value="${data.text}" placeholder="$!{data.label}"
+        pattern="${data.pattern}"
+        minlength="${data.minlength}"
+        maxlength="${data.maxlength}"
+        required=(data.required ? true : false)
+        autofocus=(data.autofocus ? true : false)
+        disabled=(data.disabled ? true : false)
         w-onFocus="handleInputFocus"
         w-onBlur="handleInputBlur"
-        w-onChange="handleInputChange"
-        w-onKeyUp="handleInputKeyUp">
+        w-onKeyUp="handleInputKeyUp"
+        w-onChange="handleInputChange" />
 </div>

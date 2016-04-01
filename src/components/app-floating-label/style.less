@@ -1,0 +1,152 @@
+//Floating Label
+
+.floating-label-form-group {
+  border-bottom: 1px solid #eee;
+  //border-right: 5px solid #fff;
+  position: relative;
+  padding: 5px 5px 0 15px;
+  margin-bottom: 10px;
+  height: 55px;
+  &:after {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 5px;
+    background-color: #fff;
+    bottom: -3px;
+    right:0;
+  }
+}
+
+.floating-label-form-group .form-control {
+  height: 27px;
+  font-size: 16px;
+  padding-top: 0;
+  position: relative;
+  top: -3px;
+  &:focus, &.has-success, &.has-error, &.has-warning {
+    outline: none;
+    box-shadow: none !important;
+  }
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 1;
+  resize: none;
+  &::placeholder {
+    color: #bbb;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+}
+
+.floating-label-form-group select.form-control {
+  z-index: 2;
+  position: relative;
+  top:-3px;
+  color: #bbb;
+  height: 23px;
+  padding: 0 8px 3px 0;
+  border: none;
+  box-shadow: none !important;
+//  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="8" height="5" viewBox="0 0 8 5" enable-background="new 0 0 8.002 5" xml:space="preserve"><path fill="#CCCCCC" d="M0 0l4 5 4-5H0z"/></svg>') right center no-repeat;
+  background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20x%3D%220%22%20y%3D%220%22%20width%3D%228%22%20height%3D%225%22%20viewBox%3D%220%200%208%205%22%20enable-background%3D%22new%200%200%208.002%205%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23CCCCCC%22%20d%3D%22M0%200l4%205%204-5H0z%22%2F%3E%3C%2Fsvg%3E') right center no-repeat; // encodeURIComponent: http://bit.ly/1Gq06YO
+  border-right:15px solid #fff !important;
+  appearance: none;
+  &:focus, &.has-success, &.has-error, &.has-warning {
+      outline: none;
+      box-shadow: none !important;
+  }
+  &.floating-label-form-group-with-value {
+    color: #444;
+  }
+}
+
+.floating-label-form-group label {
+  display: block;
+  position: relative;
+  top: 2em;
+  opacity: 0;
+  z-index: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  margin: 0;
+  color: #b1b1b1;
+  transition: top 0.5s ease, opacity 0.5s ease, color 0.5s ease;
+}
+
+.floating-label-form-group .help-block {
+  // margin-top: 1px;
+  // margin-bottom: 0;
+  font-size: 10px;
+  position: absolute;
+  bottom:-26px;
+}
+
+.floating-label-form-group:not(:first-child) {
+  //border-left: 5px solid #fff;
+  padding-left: 14px;
+  &:before {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 5px;
+    background-color: #fff;
+    bottom: -3px;
+    left:0;
+  }
+}
+
+.floating-label-form-group:last-child {
+  //border-right: none;
+  &:after {
+    content:none;
+    display:none;
+  }
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+  color: #000;
+}
+
+.floating-label-form-group-with-focus, .floating-label-form-group-with-value {
+  border-bottom: 2px solid #5cb85c;
+  transition: border-color 0.25s ease, border-width 0.25s ease;
+}
+
+.floating-label-form-group-with-error {
+  border-bottom: 2px solid #d9534f;
+  transition: border-color 0.25s ease, border-width 0.25s ease;
+}
+
+// form .row:first-child .floating-label-form-group {
+//   border-top: 1px solid #ccc;
+// }
+
+// .floating-label-form-group {
+//   &.col-xs-1, &.col-xs-2, &.col-xs-3, &.col-xs-4, &.col-xs-5, &.col-xs-6, &.col-xs-7, &.col-xs-8, &.col-xs-9, &.col-xs-10, &.col-xs-11, &.col-xs-12 {
+//     &:first-child {
+//       padding-left: 0;
+//     }
+//   }
+// }
+
+.floating-label-form-group-textarea {
+  height: 101px;
+}

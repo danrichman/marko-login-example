@@ -1,0 +1,10 @@
+{
+    "@label": "string",
+    "@required": "boolean",
+    "@checked": "boolean",
+    "@class": "string",
+    "@name": "name",
+    "@value": "boolean",
+    "@disabled": "boolean",
+    "@autocomplete": "string"
+}

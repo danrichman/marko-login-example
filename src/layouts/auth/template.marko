@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title><layout-placeholder name="title"/></title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script><!-- Master Polyfill. Load before you load or parse your own JavaScript -->
         <lasso-head/>
     </head>
     <body>
@@ -12,8 +13,12 @@
 
         <layout-placeholder name="body" />
 
+
+
         <lasso-body/>
         <init-widgets/>
+        <!-- Out-of-order async fragments (if any) will be rendered below -->
+        <async-fragments/>
         <browser-refresh enabled=true />
     </body>
 </html>

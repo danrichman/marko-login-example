@@ -1,0 +1,7 @@
+<div class="form-group form-group-switch ${data.className}" w-bind>
+    <span class="label-switch-text" w-id="checkboxLabel">${data.label}</span>
+    <label class="label-switch pull-right" w-for="switch">
+        <input type="checkbox" autocomplete="${data.autocomplete}" w-id="switch" name="${data.name}" required=(data.required ? true : false) value="${data.value}" checked=(data.checked ? true : false) disabled=(data.disabled ? true : false) w-onChange="handleSwitchChange">
+        <div class="checkbox"></div>
+    </label>
+</div>

@@ -1,0 +1,11 @@
+{
+    "dependencies": [
+        "./style.less",
+        //"require: validate.js",
+        "require: src/components/app-floating-label",
+        "require: src/components/app-button"//,
+        //"src/layouts/auth/browser.json"//,
+        //"src/global-style/browser.json" //,
+        //"src/components/app/browser.json"
+    ]
+}

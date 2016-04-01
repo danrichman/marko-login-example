@@ -1,0 +1,6 @@
+{
+    "@formValid": "boolean",
+    "@emailValid": "boolean",
+    "@passwordValid": "boolean",
+    "@rememberMe": "boolean"
+}

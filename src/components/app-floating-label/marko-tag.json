@@ -1,8 +1,15 @@
 {
     "@label": "string",
     "@selected": "boolean",
+    "@required": "boolean",
+    "@autofocus": "boolean",
+    "@errorMessage": "string",
+    "@disabled": "string",
+    "@pattern": "string",
     "@text": "string",
     "@name": "string",
     "@type": "string",
-    "@class": "string"
+    "@class": "string",
+    "@maxlength": "number",
+    "@minlength": "number"
 }

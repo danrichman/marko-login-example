@@ -29,11 +29,12 @@ require('lasso').configure({
                     '> 1%'
                 ]
             }
-        }
+        },
+        'lasso-less'
     ],
 
     // Directory where generated JS and CSS bundles are written
-    'outputDir': 'static/dist',
+    'outputDir': 'public/dist',
 
     // URL prefix for static assets
     urlPrefix: '/dist',

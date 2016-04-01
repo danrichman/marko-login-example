@@ -1,0 +1,20 @@
+<form class="step1-display" w-onSubmit="handleFormSubmit" w-bind>
+    <div class="step-wrapper">
+        <div class="reg-header">
+            <h4>Forgot Password?</h4>
+            <h5>Enter your email to reset your password</h5>
+            <!-- <p id="reset-message">New password will be emailed or text to you.</p> -->
+        </div>
+        <div class="reg-body">
+            <app-floating-label label="Email" type="email" maxlength="35" required="true" autofocus="true" errorMessage="Your Email address is invalid" w-id="email" w-onValid="handleEmailValid" w-onInvalid="handleEmailInvalid" />
+            <!-- <div class="reg-footer text-center">
+                <h5>By creating an account you agree to our</h5>
+                <h4><a href="#">Terms &amp; Conditions</a></h4>
+            </div> -->
+        </div>
+    </div>
+    <div class="reg-footer text-center">
+        <app-button label="Reset Password" type="submit" size="lg" variant="success" class="animate btn-block" disabled="disabled" w-id="submit"/>
+        <!-- <h5><a href="/contact/">I can’t remember any of these</a></h5> -->
+    </div>
+</form>

@@ -1,0 +1,20 @@
+<form class="step1-display" w-onSubmit="handleFormSubmit" w-bind>
+    <div class="step-wrapper">
+        <div class="reg-header">
+            <h4>Create your account</h4>
+            <h5>It’s free and only takes 15 seconds</h5>
+        </div>
+        <div class="reg-body">
+            <app-floating-label label="Email" type="email" maxlength="35" required="true" autofocus="true" errorMessage="Your Email address is invalid" w-id="email" w-onValid="handleEmailValid" w-onInvalid="handleEmailInvalid" />
+            <app-floating-label label="Full name" type="text" minlength="3" maxlength="30" pattern="^[A-Za-z ]{1,25}$" required="true" errorMessage="Your name is invalid" w-id="fullname" w-onHasValue="handleFullnameHasValue" w-onNoValue="handleFullnameNoValue" />
+            <app-floating-label label="Username" type="text" minlength="3" maxlength="15" pattern="^[A-Za-z0-9_]{1,15}$" required="true" errorMessage="Your username is invalid" w-id="username" w-onHasValue="handleUsernameHasValue" w-onNoValue="handleUsernameNoValue" />
+            <div class="reg-footer text-center">
+                <h5>By creating an account you agree to our</h5>
+                <h4><a href="#">Terms &amp; Conditions</a></h4>
+            </div>
+        </div>
+    </div>
+    <div class="reg-footer text-center">
+        <app-button label="Register now" type="submit" size="lg" variant="success" class="animate btn-block" disabled="disabled" w-id="submit"/>
+    </div>
+</form>

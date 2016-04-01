@@ -1,8 +1,8 @@
 {
     "dependencies": [
-        "./style.css",
+        "./style.scss",
         "require: marko-widgets",
-        "require: src/components/app-floating-label",
-        "src/layouts/default/browser.json"
+        "require: src/components/login-form",
+        "src/layouts/auth/browser.json"
     ]
 }

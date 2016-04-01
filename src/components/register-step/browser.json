@@ -1,6 +1,0 @@
-{
-    "dependencies": [
-        "./style.scss",
-        "require: src/components/app-floating-label"
-    ]
-}

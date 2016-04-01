@@ -1,0 +1,21 @@
+<form class="step1-display" w-onSubmit="handleFormSubmit" w-bind>
+    <div class="step-wrapper">
+        <div class="reg-header">
+            <h4>Sign In</h4>
+            <h5>Good morning and welcome back</h5>
+            <p>Have we mentioned how super special you are?</p>
+        </div>
+        <div class="reg-body">
+            <app-floating-label label="Email" type="email" maxlength="35" required="true" autofocus="true" errorMessage="Your Email address is invalid" w-id="email" w-onValid="handleEmailValid" w-onInvalid="handleEmailInvalid" />
+            <app-floating-label label="Password" type="password" maxlength="25" required="true" errorMessage="There was a problem with your password" w-id="password" w-onHasValue="handlePasswordHasValue" w-onNoValue="handlePasswordNoValue" />
+            <app-switch label="Keep me signed in" autocomplete="off" checked="true" w-id="staySignedIn" name="staySignedIn" value="true" w-onCheckboxChanged="handleCheckboxChanged"/>
+            <div class="reg-footer text-center">
+                <h5>By creating an account you agree to our</h5>
+                <h4><a href="#">Terms &amp; Conditions</a></h4>
+            </div>
+        </div>
+    </div>
+    <div class="reg-footer text-center">
+        <app-button label="Sign In" type="submit" size="lg" variant="success" class="animate btn-block" disabled="disabled" w-id="submit"/>
+    </div>
+</form>

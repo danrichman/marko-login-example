@@ -1,0 +1,34 @@
+<!-- When animating use: w-preserve-attrs="style,class" https://github.com/marko-js/marko-widgets/issues/121 -->
+
+<div class="form-group floating-label-form-group ${data.className}" w-bind>
+    <label class="control-label" w-for="floatInput">$!{data.label}</label>
+    <select w-id="floatInput" class="form-control" placeholder="$!{data.label}"
+        w-onFocus="handleInputFocus"
+        w-onBlur="handleInputBlur"
+        w-onChange="handleInputChange">
+        <!-- <for(name,value in {'foo': 'low', 'bar': 'high'})> -->
+
+        <option>!{data.label}</option>
+
+        <for(item in data.selectOptions.items)>
+            <option value=${value} selected=[data.selected && 'selected']>${name}</option>
+        </for>
+
+
+<!--<div for="item in data.text">
+    <div for="(name,value) in field">
+        <option value=${value}>${name}</option>
+    </div>
+</div>-->
+
+        <!-- <for each="(name,value) in {'foo': 'low', 'bar': 'high'}">
+            <if(${value} == ${data.selected})>
+                <option value=${value} selected="selected">${name}</option>
+            </if>
+            <else>
+                <option value=${value}>${name}</option>
+            </else>
+        </for> -->
+
+    </select>
+</div>

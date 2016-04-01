@@ -1,5 +1,7 @@
 {
     "dependencies": [
-        "./style.scss"
+        "./style.less",
+        "require: email-validator"
+        //"require: src/components/app-floating-label"
     ]
 }

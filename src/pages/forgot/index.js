@@ -6,5 +6,6 @@ module.exports = function(req, res) {
     // ...
 
     template.render({
+
     }, res);
 };

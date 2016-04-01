@@ -1,0 +1,19 @@
+{
+    "selectOptions": {
+        "items": [
+            {
+            "name"  : "Option 1",
+            "value" : "Value 1"
+            },
+            {
+            "name"     : "Option 2",
+            "value"    : "Value 2",
+            "selected" : true
+            },
+            {
+            "name"  : "Option 3",
+            "value" : "Value 3"
+            }
+        ]
+    }
+}
