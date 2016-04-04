@@ -1,4 +1,4 @@
-//var validate = require("validate.js");
+var authorization = require('src/api/src/authorization');
 
 module.exports = require('marko-widgets').defineComponent({
     template: require('./template.marko'),
@@ -37,12 +37,18 @@ module.exports = require('marko-widgets').defineComponent({
         var submittedFullname = this.getWidget('fullname').getEl('floatInput').value;
         var submittedUsername = this.getWidget('username').getEl('floatInput').value;
 
-        // FORM IS COLLECTING THESE VALUES
-        console.log(submittedEmail);
-        console.log(submittedFullname);
-        console.log(submittedUsername);
+        var auth_arg = {
+            "email":submittedEmail,
+            "name":submittedFullname,
+            "username":submittedUsername,
+            "action":"register"
+        };
 
-        event.preventDefault(); // Not entirely sure what this does, but it was in another example
+        var auth = authorization.simpletest(auth_arg);
+
+        console.log(auth);
+
+        event.preventDefault(); // prevent form submission
     },
     handleEmailValid: function() {
         console.log('Form senses valid Email');
